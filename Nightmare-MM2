@@ -91,6 +91,7 @@ local UICorner_26 = Instance.new("UICorner")
 NightmareMM2.Name = "NightmareMM2"
 NightmareMM2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 NightmareMM2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+NightmareMM2.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = NightmareMM2
@@ -694,15 +695,15 @@ UICorner_26.Parent = TextButton_4
 
 -- Scripts:
 
-local function HHHMY_fake_script() -- ImageButton.LocalScript 
+local function VRQWQ_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function ()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(HHHMY_fake_script)()
-local function QCAVOWW_fake_script() -- MainFrame.UIDrag 
+coroutine.wrap(VRQWQ_fake_script)()
+local function DFMKEWY_fake_script() -- MainFrame.UIDrag 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UIS = game:GetService('UserInputService')
@@ -740,8 +741,8 @@ local function QCAVOWW_fake_script() -- MainFrame.UIDrag
 		end
 	end)
 end
-coroutine.wrap(QCAVOWW_fake_script)()
-local function QBNBNIY_fake_script() -- home.LocalScript 
+coroutine.wrap(DFMKEWY_fake_script)()
+local function TLBAPW_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	local frame = script.Parent
@@ -889,8 +890,8 @@ local function QBNBNIY_fake_script() -- home.LocalScript
 	setup()
 	
 end
-coroutine.wrap(QBNBNIY_fake_script)()
-local function FWKDDM_fake_script() -- player.functions 
+coroutine.wrap(TLBAPW_fake_script)()
+local function KAPZUOM_fake_script() -- player.functions 
 	local script = Instance.new('LocalScript', player)
 
 	local ScrollFrame = script.Parent.ScrollFrame
@@ -1705,8 +1706,8 @@ local function FWKDDM_fake_script() -- player.functions
 		end
 	})
 end
-coroutine.wrap(FWKDDM_fake_script)()
-local function YLCHC_fake_script() -- ToggleTest.LocalScript 
+coroutine.wrap(KAPZUOM_fake_script)()
+local function XZRAGZ_fake_script() -- ToggleTest.LocalScript 
 	local script = Instance.new('LocalScript', ToggleTest)
 
 	--[[
@@ -1825,8 +1826,8 @@ local function YLCHC_fake_script() -- ToggleTest.LocalScript
 	updateToggleState()
 	
 end
-coroutine.wrap(YLCHC_fake_script)()
-local function QNTEM_fake_script() -- visuals.functions 
+coroutine.wrap(XZRAGZ_fake_script)()
+local function HVXYS_fake_script() -- visuals.functions 
 	local script = Instance.new('LocalScript', visuals)
 
 	local ScrollFrame = script.Parent.ScrollFrame
@@ -2526,8 +2527,8 @@ local function QNTEM_fake_script() -- visuals.functions
 		HoverText = "count alive players" 
 	})
 end
-coroutine.wrap(QNTEM_fake_script)()
-local function OBAEYGS_fake_script() -- ToggleTest_2.LocalScript 
+coroutine.wrap(HVXYS_fake_script)()
+local function XRVT_fake_script() -- ToggleTest_2.LocalScript 
 	local script = Instance.new('LocalScript', ToggleTest_2)
 
 	--[[
@@ -2646,8 +2647,8 @@ local function OBAEYGS_fake_script() -- ToggleTest_2.LocalScript
 	updateToggleState()
 	
 end
-coroutine.wrap(OBAEYGS_fake_script)()
-local function OOKCLM_fake_script() -- combat.functions 
+coroutine.wrap(XRVT_fake_script)()
+local function FCQXVI_fake_script() -- combat.functions 
 	local script = Instance.new('LocalScript', combat)
 
 	local ScrollFrame = script.Parent.ScrollFrame
@@ -3151,8 +3152,8 @@ local function OOKCLM_fake_script() -- combat.functions
 		end
 	})
 end
-coroutine.wrap(OOKCLM_fake_script)()
-local function IYUGDD_fake_script() -- ToggleTest_3.LocalScript 
+coroutine.wrap(FCQXVI_fake_script)()
+local function UUKIO_fake_script() -- ToggleTest_3.LocalScript 
 	local script = Instance.new('LocalScript', ToggleTest_3)
 
 	--[[
@@ -3271,8 +3272,8 @@ local function IYUGDD_fake_script() -- ToggleTest_3.LocalScript
 	updateToggleState()
 	
 end
-coroutine.wrap(IYUGDD_fake_script)()
-local function EWAWT_fake_script() -- troll.functions 
+coroutine.wrap(UUKIO_fake_script)()
+local function OGTTGW_fake_script() -- troll.functions 
 	local script = Instance.new('LocalScript', troll)
 
 	local ScrollFrame = script.Parent.ScrollFrame
@@ -3798,8 +3799,8 @@ local function EWAWT_fake_script() -- troll.functions
 		end
 	})
 end
-coroutine.wrap(EWAWT_fake_script)()
-local function ZZGSSV_fake_script() -- ToggleTest_4.LocalScript 
+coroutine.wrap(OGTTGW_fake_script)()
+local function PMIRW_fake_script() -- ToggleTest_4.LocalScript 
 	local script = Instance.new('LocalScript', ToggleTest_4)
 
 	--[[
@@ -3918,8 +3919,8 @@ local function ZZGSSV_fake_script() -- ToggleTest_4.LocalScript
 	updateToggleState()
 	
 end
-coroutine.wrap(ZZGSSV_fake_script)()
-local function YGDMAU_fake_script() -- MainFrame.tabswitch 
+coroutine.wrap(PMIRW_fake_script)()
+local function KJKDIQ_fake_script() -- MainFrame.tabswitch 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local mainFrame = script.Parent
@@ -3978,11 +3979,12 @@ local function YGDMAU_fake_script() -- MainFrame.tabswitch
 	tabs.home.Visible = true
 	
 end
-coroutine.wrap(YGDMAU_fake_script)()
-local function JFOP_fake_script() -- NightmareMM2.PREMIUM 
+coroutine.wrap(KJKDIQ_fake_script)()
+local function PQSWPT_fake_script() -- NightmareMM2.PREMIUM 
 	local script = Instance.new('LocalScript', NightmareMM2)
 
-	_G.awid38r732rhnfd8332 = false
+	_G.jokxexv1 =true
+	_G.Aulovn=true
 	
 	
 	
@@ -3992,4 +3994,4 @@ local function JFOP_fake_script() -- NightmareMM2.PREMIUM
 	--to do only premium function you can use this and put into script start : if _G.awid38r732rhnfd8332 == false then return end
 	
 end
-coroutine.wrap(JFOP_fake_script)()
+coroutine.wrap(PQSWPT_fake_script)()
